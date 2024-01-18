@@ -45,6 +45,7 @@ button {
 input {
   display: block;
   font-family: inherit;
+  outline: transparent;
 }
 
 /*---------header--------*/
@@ -568,37 +569,49 @@ fill: #f4f4fd;
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
-  background: #FCFCFC;
+  background-color: #FCFCFC;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 24px;
+  padding: 72px 24px 24px;
 }
 
 .modal-close-btn {
-  margin-left: auto;
-  margin-bottom: 24px;
-  height: 24px;
-  width: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background-color: #E7E9FC;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   }
 
-.icon-close {
-  fill:black;;
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: #404BBF;
+    border: none;
 }
 
-.backdrop-title {
+.modal-close-btn:hover > .icon-close,
+.modal-close-btn:focus > .icon-close {
+  fill: #FFFFFF;
+}
+.icon-close {
+}
+
+.modal-title {
   margin-bottom: 16px;
-  color:#2E2F42;
-    text-align: center;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  color: #2E2F42;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .form-label {
@@ -608,15 +621,45 @@ fill: #f4f4fd;
     letter-spacing: 0.04em;
 }
 
+.modal-wrap {
+  position: relative;
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+.icon-modal {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .form-input {
   display: block;
-  margin-bottom: 8px;
+  padding: 11px 16px 11px 34px;
   width: 100%;
   height: 48px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.40);
+}
+
+.form-input:hover,
+.form-input:focus {
+border-color: #4D5AE5;
+}
+
+.form-input:hover + .icon-modal,
+.form-input:focus + .icon-modal {
+  fill: #4D5AE5;
 }
 
 .form-textarea {
   padding: 8px 16px;
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.40);
 }
 
 .form-textarea::placeholder {
