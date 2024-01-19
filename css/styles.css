@@ -617,7 +617,7 @@ fill: #f4f4fd;
 .form-label {
   color: #8E8F99;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
 }
 
@@ -653,6 +653,10 @@ border-color: #4D5AE5;
   fill: #4D5AE5;
 }
 
+.modal-wrap-textarea {
+  margin-bottom: 16px;
+}
+
 .form-textarea {
   padding: 8px 16px;
   display: block;
@@ -660,6 +664,8 @@ border-color: #4D5AE5;
   min-height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.40);
+  resize: none;
+  margin-top: 4px;
 }
 
 .form-textarea::placeholder {
@@ -668,4 +674,21 @@ border-color: #4D5AE5;
     line-height: 1.16;
     letter-spacing: 0.04em;
 }
-  
+
+.modal-wrap-chekbox {
+  margin-bottom: 24px;
+}
+
+.policy-link {
+  color: #4D5AE5;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+.form-span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid  rgba(46, 47, 66, 0.40);
+  display: inline-flex;
+  margin-right: 8px;
+}
