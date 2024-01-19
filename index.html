@@ -461,10 +461,8 @@
       </ul>
 </div>
 <form name="subscribe" autocomplete="on" class="subscribe-footer">
-  <div class="subscribe-footer-wrap">
-    <label for="email-footer">Subscribe</label>
-      <input id="email-footer" type="email" name="email">
-  </div>
+    <label class="footer-text-label">Subscribe
+      <input class="footer-input" type="email" name="email" placeholder="E-mail"></label>
     <button class="footer-subscribe-btn" type="submit">Subscribe
       <svg width="24" height="24" class="icon icon-subscribe">
         <use href="./images/icons.svg#icon-subscribe"></use>
@@ -473,7 +471,7 @@
   </form>
     </div>
   </footer>
-  <div class="backdrop">
+  <div class="backdrop iis-open">
     <div class="modal">
       <button type="button" class="modal-close-btn">
         <svg class="icon icon-close" width="8" height="8">
@@ -505,17 +503,22 @@
         </div>
         <div class="modal-wrap-textarea">
         <label class="form-label" for="form-textarea">Comment</label>
-        <textarea class="form-textarea" placeholder="Text input" name="user-comment"
-        id="form-textarea">
+        <textarea class="form-textarea" name="user-comment"
+        id="form-textarea" placeholder="Text input">
         </textarea>
         </div>
         <div class="modal-wrap-chekbox">
-        <input type="checkbox" name="policy" id="policy" value="true">
-        <label class="form-label" for="policy"><span class="form-span"></span>I accept the terms and conditions of the 
+        <input class="input-checkbox visually-hidden" type="checkbox" name="policy" id="policy" value="true">
+        <label class="form-checkbox" for="policy">
+          <span class="form-span">
+          <svg class="icon-click" width="10" height="8">
+            <use href="./images/icons.svg#icon-click"></use>
+          </svg>
+        </span>I accept the terms and conditions of the 
           <a href="" class="policy-link">Privacy Policy</a>
         </label>
         </div>
-        <button type="submit">Send</button>
+        <button class="form-btn" type="submit">Send</button>
       </form>
     </div>
   </div>
