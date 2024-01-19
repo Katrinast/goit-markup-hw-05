@@ -585,7 +585,7 @@ fill: #f4f4fd;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   border: none;
   color: #FFF;
@@ -694,7 +694,7 @@ pointer-events: auto;
     line-height: 1.17;
     letter-spacing: 0.04em;
     display: block;
-    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .input-wrap {
@@ -740,6 +740,7 @@ pointer-events: auto;
 }
 
 .form-textarea {
+  padding: 8px 16px;
   display: block;
   width: 100%;
   min-height: 120px;
@@ -747,6 +748,8 @@ pointer-events: auto;
   line-height: 1.17;
   letter-spacing: 0.04em;
   border-radius: 4px;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.40);
   resize: none;
   outline: transparent;
@@ -788,6 +791,7 @@ pointer-events: auto;
   fill: transparent;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-checkbox:checked + .form-checkbox span {
