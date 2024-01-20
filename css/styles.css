@@ -768,7 +768,7 @@ pointer-events: auto;
   margin-bottom: 24px;
 }
 
-.form-checkbox {
+.label-checkbox {
   color: #8E8F99;
     font-size: 12px;
     line-height: 1.17;
@@ -792,7 +792,7 @@ pointer-events: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-checkbox:checked + .form-checkbox span {
+.input-checkbox:checked + .label-checkbox span {
 background-color: #404BBF;
 fill: #F4F4FD;
 border: none;
