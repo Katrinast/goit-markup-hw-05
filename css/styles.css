@@ -42,12 +42,6 @@ button {
   padding: 0;
 }
 
-input {
-  display: block;
-  font-family: inherit;
-  outline: transparent;
-}
-
 /*---------header--------*/
 
 .header {
@@ -576,7 +570,7 @@ fill: #f4f4fd;
 }
 
 .footer-input::placeholder {
-  color: #ffffff;
+  color: #fff;
 }
 
 .footer-subscribe-btn {
