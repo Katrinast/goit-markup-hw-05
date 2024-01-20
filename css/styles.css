@@ -773,8 +773,6 @@ pointer-events: auto;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    display: flex;
-    gap: 8px;
 }
 
 .policy-link {
