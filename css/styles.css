@@ -25,9 +25,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -201,7 +201,7 @@ margin: 0 auto;
 /*------advantage section-----*/
 
 .advantages {
-padding: 120px 0;
+padding: 96px 0;
 }
 
 .advantages-container {
@@ -225,9 +225,9 @@ display: flex;
 gap: 24px;
 }
 
-.advantages-item {
+/*.advantages-item {
 width: calc((100% - 72px) / 4);
-}
+}*/
 
 .advantages-icons {
 fill: none;
@@ -594,7 +594,9 @@ fill: #f4f4fd;
   margin-left: 16px;
 }
 
-/*---------backdrop-----------*/
+/*------------------------------*/
+
+/*---------backdrop------------*/
 
 .backdrop {
   width: 100%;
@@ -821,3 +823,39 @@ border: none;
 .form-btn:focus {
   background-color: #404BBF;
 }
+
+/*------------------------------*/
+
+/*---------media768------------*/
+
+@media screen and (min-width: 768px) {
+  
+  .container {
+      max-width: 768px;
+    }
+
+}
+
+
+/*------------------------------*/
+
+/*---------media1158------------*/
+
+@media screen and (min-width: 1158px) {
+  
+  .container {
+      max-width: 1158px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+  .advantages {
+      padding: 120px 0;
+    }
+
+  .advantages-list {
+      gap: 24px;
+    }
+
+}
+
