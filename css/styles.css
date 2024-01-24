@@ -222,36 +222,22 @@ padding: 96px 0;
 
 .advantages-list {
 display: flex;
-gap: 24px;
-}
-
-/*.advantages-item {
-width: calc((100% - 72px) / 4);
-}*/
-
-.advantages-icons {
-fill: none;
+flex-direction: column;
+gap: 72px;
 }
 
 .advantages-icons-container {
-border: 1px solid #8E8F99;
-padding: 24px 100px;
-margin-bottom: 8px;
-background: #F4F4FD;
-height: 112px;
-border-radius: 4px;
-display: flex;
-justify-content: center;
-align-items: center;
+    display: none;
 }
 
 .advantages-subtitle {
 color:#2E2F42;
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2;
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
 letter-spacing: 0.02em;
-margin-bottom: 8px;
+text-transform: capitalize;
 }
 
 .advantages-text {
@@ -259,7 +245,7 @@ color: #434455;
 font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
-max-width: 264px;
+max-width: 288px;
 }
 /*-----------------------------*/
 
@@ -267,7 +253,7 @@ max-width: 264px;
 
 .team {
 background-color: #F4F4FD;
-padding: 120px 0;
+padding: 96px 0;
 }
 
 .team-container {
@@ -834,6 +820,27 @@ border: none;
       max-width: 768px;
     }
 
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: space-around; 
+    gap: 72px 24px;   
+    }
+
+  .advantages-subtitle {
+    text-align: start;
+  }
+
+  .advantages-text {
+    max-width: 356px;
+  }
+
+  .advantages-item {
+  width: calc((100% - 24px) / 2);
+    }
+
+  /*----------team----------*/
+
 }
 
 
@@ -854,8 +861,44 @@ border: none;
     }
 
   .advantages-list {
+      flex-wrap: nowrap;
       gap: 24px;
     }
+
+  .advantages-icons-container {
+      border: 1px solid #8E8F99;
+      padding: 24px 100px;
+      margin-bottom: 8px;
+      background: #F4F4FD;
+      height: 112px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+
+.advantages-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.advantages-text {
+  max-width: 264px;
+}
+
+.advantages-item {
+  width: calc((100% - 72px) / 4);
+}
+
+/*----------team----------*/
+.team {
+  background-color: #F4F4FD;
+  padding: 120px 0;
+}
 
 }
 
