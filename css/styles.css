@@ -49,9 +49,11 @@ button {
   box-shadow: 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
   0px 1px 6px rgba(46, 47, 66, 0.08);
   }
+
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -68,7 +70,7 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
+    padding: 18px 0;
 }
 
 .logo-item {
@@ -129,7 +131,6 @@ button {
     color:#434455;    
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 0;
     transition-property: color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -703,8 +704,10 @@ pointer-events: auto;
 }
 
 .modal {
-  width: 408px;
-  min-height: 584px;
+  /*width: 408px;
+  min-height: 584px;*/
+  width: 288px;
+  min-height: 623px;
   border-radius: 4px;
   background-color: #FCFCFC;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
@@ -712,7 +715,8 @@ pointer-events: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 72px 24px 24px;
+  /*padding: 72px 24px 24px;*/
+  padding: 72px 16px 24px;
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -917,6 +921,11 @@ border: none;
       max-width: 768px;
     }
 /*----------header----------*/
+
+.logo {
+padding: 0;
+}
+
 .header-open-btn {
   display: none;
 }
@@ -925,15 +934,20 @@ border: none;
   display: none;
 }
 
-/*----------hero----------*/
 .nav-list {
   display: flex;
   gap: 40px;
+  margin-left: 120px;
 }
 
 .adress-list {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.adress-link {
+  padding: 0;
 }
 
 /*----------hero----------*/
@@ -1049,6 +1063,22 @@ text-align: left;
     
 /*----------header----------*/
 
+.logo {
+  margin-right: 76px;
+}
+
+.adress-list {
+  flex-direction: row;
+  gap: 24px;
+}
+
+.adress-link {
+padding: 24px 0;
+}
+
+.nav-list {
+  margin-left: 0;
+}
 
 /*----------hero----------*/
 .section-hero {
