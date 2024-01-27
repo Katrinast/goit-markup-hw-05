@@ -530,6 +530,10 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 }
 
+/*-----------------------------*/
+
+/*-----------footer-----------*/
+
 .footer {
 background-color:#2E2F42;
 padding-top: 98px;
@@ -990,8 +994,9 @@ padding: 0;
 }
 
 /*--------portfolio--------*/
-.portfolio {
 
+.portfolio-item {
+  width: 356px;
 }
 
 .portfolio-list {
@@ -1157,6 +1162,7 @@ padding: 120px 0;
 }
 
 .portfolio-item {
+  width: 360px;
 width: calc((100% - 48px) / 3);
 }
 
